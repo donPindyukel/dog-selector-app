@@ -1,0 +1,11 @@
+.dog-dropdown {
+  display: flex;
+  select {
+    width: 200px;
+    margin: 0 auto;
+    outline: none;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 10px;
+  }
+}

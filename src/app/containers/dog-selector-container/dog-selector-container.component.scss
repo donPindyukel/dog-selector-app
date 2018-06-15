@@ -1,0 +1,31 @@
+.picture-container {
+  height: 400px;
+  padding-top: 70px;
+}
+
+.selector-container {
+  text-align: center;
+  background: #ddd;
+  padding: 40px 0;
+}
+
+.button {
+  background: #1B83D1;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 14px;
+  &:hover {
+    background: #1966A4;
+  }
+  &:disabled {
+    background: #7A7A7A;
+  }
+}
+
+.title {
+  text-align: center;
+}

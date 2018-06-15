@@ -1,0 +1,6 @@
+<div class="dog-dropdown">
+  <select (change)="onChange($event.target.value)" #select>
+    <option *ngFor="let breed of breeds" [selected]="breed === selectedOption" value="{{breed}}">{{breed | makeUpFirstLetter}}</option>
+  </select>
+</div>
+

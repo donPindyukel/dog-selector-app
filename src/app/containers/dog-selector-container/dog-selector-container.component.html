@@ -1,0 +1,18 @@
+<div class="app-content">
+  <h1 class="title">Dog selector by breeds</h1>
+  <div *ngIf="!isSpinner" class=selector-container>
+    <app-breeds-dropdown [breeds]="breeds$ | async"
+                         (selectedBreed)="onBreedSelect($event)"
+    >
+    </app-breeds-dropdown>
+    <div class="picture-container">
+      <app-picture [imageUrl]="imageUrl"
+                   *ngIf="!isImageSpinner"
+      >
+      </app-picture>
+      <app-spinner *ngIf="isImageSpinner"></app-spinner>
+    </div>
+    <button class="button" (click)="onClickGetRandom()" [disabled]="isImageSpinner">Get Random Photo</button>
+  </div>
+  <app-spinner *ngIf="isSpinner"></app-spinner>
+</div>
